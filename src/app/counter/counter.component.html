@@ -1,0 +1,12 @@
+<div>
+<h2 [style.color]="color">{{tittle}}</h2>
+<button (click)="updateColor()">changeColor</button>
+<h4>{{count}}</h4>
+<button (click)="counter('inc')">+</button>
+<button (click)="counter('dec')">-</button>
+<br>
+<br>
+<button (click)="toggle()">toggle</button>
+<h1 *ngIf="display">toggle</h1>
+
+</div>

@@ -1,0 +1,21 @@
+<div>
+    <h1>User Sign Up </h1>
+    <form class="form" #form="ngForm" (ngSubmit)="getData(form.value)">
+        <input type="text" ngModel name="fname" placeholder="FirstName">
+        
+        <br><br>
+        <input type="text" ngModel name="lname" placeholder="LasttName"><br><br>
+        <input type="email" ngModel name="email" placeholder="Email"><br><br>
+        <input type="text" ngModel name="designation" placeholder="Designation"><br><br>
+        <input type="password" ngModel name="pass" placeholder="Password"><br><br>
+        <input type="password" ngModel name="cpass" placeholder="Confirm Password"><br><br>
+        <button type="submit">Sign-up</button>
+        <h3>Already registered <button>Login</button></h3>
+
+    </form>
+    <ul>
+        <li>{{userData.fname}}{{userData.lname}}</li>
+        <li>{{userData.email}}</li>
+        <li>{{userData.designation}}</li>
+    </ul>
+</div>
